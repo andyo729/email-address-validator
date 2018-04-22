@@ -1,0 +1,34 @@
+{
+  "name": "email-address-validator",
+  "version": "0.0.1",
+  "description": "Email address validator that does not use reg ex and provides detailed errors as to the issue with the email address.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts{,x}",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyo729/email-address-validator.git"
+  },
+  "keywords": [
+    "email",
+    "validator",
+    "typescript"
+  ],
+  "author": "andyo729 <orahoske.2@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyo729/email-address-validator/issues"
+  },
+  "homepage": "https://github.com/andyo729/email-address-validator#readme",
+  "devDependencies": {
+    "@types/jest": "22.2.3",
+    "jest": "22.4.3",
+    "ts-jest": "22.4.4",
+    "tslint": "5.9.1",
+    "tslint-config-airbnb": "5.8.0",
+    "typescript": "2.8.3"
+  }
+}
