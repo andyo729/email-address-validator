@@ -13,11 +13,10 @@ export default (email: string): Boolean => {
   const tokens = email.split('').reduce(
     (currentTokens: Token[], currentChar: string): Token[] => {
       const currentToken = getLastTokenInArray(currentTokens);
-      const newToken = new LocalName();
-      newToken.value = `${currentToken.value}${currentChar}`;
+      const newToken = new LocalName(currentToken.getValue());
       return [newToken];
     },
-    [new LocalName()]
+    [new LocalName('')]
   );
   return true;
 };
